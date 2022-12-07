@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/philfreshman/advent-of-code-2021/day01"
+	"github.com/philfreshman/advent-of-code-2021/day02"
 	"github.com/spf13/cobra"
 )
 
@@ -18,6 +19,7 @@ const (
 var (
 	puzzles = [][]Runner{
 		{day01.PuzzleA{}, day01.PuzzleB{}},
+		{day02.PuzzleA{}, day02.PuzzleB{}},
 	}
 )
 
@@ -67,7 +69,7 @@ func newRootCmd(args []string, out io.Writer) (*cobra.Command, error) {
 }
 
 func runPuzzles(out io.Writer, pzs []Runner) {
-	fmt.Fprintln(out, "🎄 Advent of Code 2021")
+	fmt.Fprintln(out, "🎄 Advent of Code 2022")
 	fmt.Fprintln(out)
 
 	// Capture all durations for displaying total elapsed time
@@ -96,7 +98,7 @@ func sumElapsedTime(dur []time.Duration) time.Duration {
 }
 
 func benchmarkPuzzles(out io.Writer, pzs []Runner, opts options) {
-	fmt.Fprintf(out, "🎄 Advent of Code 2021 - Benchmark [executions: %d]\n", opts.Times)
+	fmt.Fprintf(out, "🎄 Advent of Code 2022 - Benchmark [executions: %d]\n", opts.Times)
 	fmt.Fprintln(out)
 
 	// Capture all durations for displaying total elapsed time
