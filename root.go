@@ -9,6 +9,7 @@ import (
 
 	"github.com/philfreshman/advent-of-code-2021/day01"
 	"github.com/philfreshman/advent-of-code-2021/day02"
+	"github.com/philfreshman/advent-of-code-2021/day03"
 	"github.com/spf13/cobra"
 )
 
@@ -20,6 +21,7 @@ var (
 	puzzles = [][]Runner{
 		{day01.PuzzleA{}, day01.PuzzleB{}},
 		{day02.PuzzleA{}, day02.PuzzleB{}},
+		{day03.PuzzleA{}, day03.PuzzleB{}},
 	}
 )
 
