@@ -7,9 +7,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/philfreshman/advent-of-code-2021/day01"
-	"github.com/philfreshman/advent-of-code-2021/day02"
-	"github.com/philfreshman/advent-of-code-2021/day03"
+	"github.com/philfreshman/advent-of-code-2022/day01"
+	"github.com/philfreshman/advent-of-code-2022/day02"
+	"github.com/philfreshman/advent-of-code-2022/day03"
 	"github.com/spf13/cobra"
 )
 

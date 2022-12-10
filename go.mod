@@ -1,4 +1,4 @@
-module github.com/philfreshman/advent-of-code-2021
+module github.com/philfreshman/advent-of-code-2022
 
 go 1.19
 
