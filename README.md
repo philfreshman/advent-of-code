@@ -7,7 +7,7 @@ Here are my solutions for the [Advent of Code 2022](https://adventofcode.com/202
 To build and run Go solutions:
 
 ```sh
-go run . aoc-2022 --benchmark --day 1
+go run . aoc-2022 --benchmark --day 4
 ```
 
 
@@ -25,6 +25,7 @@ MacBook Pro (2019)
 
 |       | Puzzle A                  | Puzzle B                  |
 |:------|:--------------------------|:--------------------------|
-| Day 1 | [`0.016ms`](./day01/a.go) | [`0.016ms`](./day01/b.go) |
-| Day 2 | [`0.016ms`](./day02/a.go) | [`0.016ms`](./day02/b.go) |
-| Day 3 | [`0.049ms`](./day03/a.go) | [`0.050ms`](./day03/b.go) |
+| Day 1 | [`0.011ms`](./day01/a.go) | [`0.011ms`](./day01/b.go) |
+| Day 2 | [`0.010ms`](./day02/a.go) | [`0.011ms`](./day02/b.go) |
+| Day 3 | [`0.039ms`](./day03/a.go) | [`0.040ms`](./day03/b.go) |
+| Day 4 | [`0.958ms`](./day04/a.go) | [`0.785ms`](./day04/b.go) |

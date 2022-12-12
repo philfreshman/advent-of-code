@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	"github.com/philfreshman/advent-of-code-2022/day04"
 	"io"
 	"sort"
 	"time"
@@ -22,6 +23,7 @@ var (
 		{day01.PuzzleA{}, day01.PuzzleB{}},
 		{day02.PuzzleA{}, day02.PuzzleB{}},
 		{day03.PuzzleA{}, day03.PuzzleB{}},
+		{day04.PuzzleA{}, day04.PuzzleB{}},
 	}
 )
 
