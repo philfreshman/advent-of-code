@@ -7,7 +7,7 @@ import (
 )
 
 //go:embed input.txt
-var	inputB string
+var inputB string
 
 type PuzzleB struct{}
 
@@ -21,24 +21,23 @@ type Group struct {
 	elf3 string
 }
 
-func (p PuzzleB) Run() int{
+func (p PuzzleB) Run() any {
 	items := strings.Split(inputB, "\n")
 
 	var g Group
 	var duplicate string
 	var sum = 0
 
-	for i := 0; i < len(items); i+=3 {
-
+	for i := 0; i < len(items); i += 3 {
 		g = Group{
-			items[i],items[i+1],items[i+2],
+			items[i], items[i+1], items[i+2],
 		}
 
 		for _, val := range g.elf1 {
 			test := string(val)
 			sec := strings.Contains(g.elf2, test)
 			thi := strings.Contains(g.elf3, test)
-			if  sec && thi {
+			if sec && thi {
 				duplicate = string(val)
 				break
 			}
@@ -51,12 +50,7 @@ func (p PuzzleB) Run() int{
 			lowIdx := strings.Index(lower, duplicate)
 			sum += lowIdx + 1
 		}
-
 	}
 
 	return sum
 }
-
-
-
-

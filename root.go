@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/philfreshman/advent-of-code-2022/day04"
+	"github.com/philfreshman/advent-of-code-2022/day05"
 	"io"
 	"sort"
 	"time"
@@ -11,11 +11,12 @@ import (
 	"github.com/philfreshman/advent-of-code-2022/day01"
 	"github.com/philfreshman/advent-of-code-2022/day02"
 	"github.com/philfreshman/advent-of-code-2022/day03"
+	"github.com/philfreshman/advent-of-code-2022/day04"
 	"github.com/spf13/cobra"
 )
 
 const (
-	benchNum = 200
+	benchNum = 10000
 )
 
 var (
@@ -24,6 +25,7 @@ var (
 		{day02.PuzzleA{}, day02.PuzzleB{}},
 		{day03.PuzzleA{}, day03.PuzzleB{}},
 		{day04.PuzzleA{}, day04.PuzzleB{}},
+		{day05.PuzzleA{}, day05.PuzzleB{}},
 	}
 )
 
@@ -110,7 +112,7 @@ func benchmarkPuzzles(out io.Writer, pzs []Runner, opts options) {
 
 	exec := make([]time.Duration, opts.Times)
 	for _, pz := range pzs {
-		res := 0
+		var res any
 
 		// Run each puzzle the required benchmark sample rate, collecting each duration
 		for b := 0; b < opts.Times; b++ {

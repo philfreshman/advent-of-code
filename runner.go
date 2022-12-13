@@ -4,5 +4,5 @@ import "fmt"
 
 type Runner interface {
 	fmt.Stringer
-	Run() int
+	Run() any
 }

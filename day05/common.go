@@ -1,0 +1,3 @@
+package day05
+
+var abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"

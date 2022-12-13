@@ -12,9 +12,9 @@ func (b PuzzleB) String() string {
 	return "02b"
 }
 
-func (b PuzzleB) Run() int {
+func (b PuzzleB) Run() any {
 	myDir, _ := os.Getwd()
-	fileData, err := os.Open(myDir + "/input.txt")
+	fileData, err := os.Open(myDir + "/input2.txt.txt")
 	if err != nil {
 		return 0
 	}

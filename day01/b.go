@@ -14,9 +14,9 @@ func (p PuzzleB) String() string {
 
 type PuzzleB struct{}
 
-func (p PuzzleB) Run() int {
+func (p PuzzleB) Run() any {
 	myDir, _ := os.Getwd()
-	fileData, _ := os.Open(myDir + "/input.txt")
+	fileData, _ := os.Open(myDir + "/input2.txt.txt")
 	getHighestCal(fileData)
 	_ = fileData.Close()
 

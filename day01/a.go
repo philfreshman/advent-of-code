@@ -13,9 +13,9 @@ func (p PuzzleA) String() string {
 	return "01a"
 }
 
-func (p PuzzleA) Run() int {
+func (p PuzzleA) Run() any {
 	myDir, _ := os.Getwd()
-	fileData, _ := os.Open(myDir + "/input.txt")
+	fileData, _ := os.Open(myDir + "/input2.txt.txt")
 	result := getCalories(fileData)
 	_ = fileData.Close()
 	return result

@@ -15,8 +15,7 @@ func (p PuzzleA) String() string {
 	return "04a"
 }
 
-func (p PuzzleA) Run() int {
-
+func (p PuzzleA) Run() any {
 	result := 0
 	arrOfSections := strings.Split(input, "\n")
 
