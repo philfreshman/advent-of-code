@@ -8,5 +8,5 @@ import (
 func TestPuzzleB(t *testing.T) {
 	p := PuzzleB{}
 	res := p.Run()
-	assert.Equal(t, 833, res)
+	assert.Equal(t, "TZLTLWRNF", res)
 }

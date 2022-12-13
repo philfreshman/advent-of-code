@@ -6,9 +6,6 @@ import (
 	"strings"
 )
 
-//go:embed input.txt
-var inputB string
-
 type PuzzleB struct{}
 
 func (p PuzzleB) String() string {
@@ -17,7 +14,7 @@ func (p PuzzleB) String() string {
 
 func (p PuzzleB) Run() any {
 	result := 0
-	arrOfSections := strings.Split(inputB, "\n")
+	arrOfSections := strings.Split(input, "\n")
 
 	for _, val := range arrOfSections {
 		stringPair := StringPair{

@@ -6,9 +6,6 @@ import (
 	"strings"
 )
 
-//go:embed input.txt
-var input string
-
 type PuzzleA struct{}
 
 func (p PuzzleA) String() string {

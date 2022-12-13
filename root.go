@@ -112,19 +112,19 @@ func benchmarkPuzzles(out io.Writer, pzs []Runner, opts options) {
 
 	exec := make([]time.Duration, opts.Times)
 	for _, pz := range pzs {
-		var res any
+		//var res any
 
 		// Run each puzzle the required benchmark sample rate, collecting each duration
 		for b := 0; b < opts.Times; b++ {
 			now := time.Now()
-			res = pz.Run()
+			pz.Run()
 			exec[b] = time.Since(now)
 		}
 		sort.Slice(exec, func(i, j int) bool {
 			return exec[i] < exec[j]
 		})
 
-		fmt.Fprintf(out, "🧩 Puzzle %s: %-14d [time taken: %s]\n", pz, res, exec[0])
+		fmt.Fprintf(out, "🧩 Puzzle %s:\t[time taken: %s]\n", pz, exec[0])
 		elapsed = append(elapsed, exec[0])
 	}
 

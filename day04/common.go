@@ -1,9 +1,13 @@
 package day04
 
 import (
+	_ "embed"
 	"strconv"
 	"strings"
 )
+
+//go:embed input.txt
+var input string
 
 type StringPair struct {
 	elf1 string

@@ -1,4 +1,4 @@
-# Advent of Code 2021
+# Advent of Code 2022
 
 Here are my solutions for the [Advent of Code 2022](https://adventofcode.com/2022) Challenge.
 
@@ -29,4 +29,4 @@ MacBook Pro (2019)
 | Day 2 | [`0.012ms`](./day02/a.go) | [`0.011ms`](./day02/b.go) |
 | Day 3 | [`0.030ms`](./day03/a.go) | [`0.033ms`](./day03/b.go) |
 | Day 4 | [`0.951ms`](./day04/a.go) | [`0.724ms`](./day04/b.go) |
-| Day 5 | [`0.071ms`](./day05/a.go) | [`0.000ms`](./day05/b.go) |
+| Day 5 | [`0.071ms`](./day05/a.go) | [`0.145ms`](./day05/b.go) |
