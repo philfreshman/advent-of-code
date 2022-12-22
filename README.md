@@ -1,5 +1,16 @@
 # Advent of Code 2022
 
+```sh
+          .---_ 
+         / / /\|
+       / / | \ *
+      /  /  \ \
+     / /  / \  \
+   ./~~~~~~~~~~~\.
+  ( .",^. -". '.~ )
+   '~~~~~~~~~~~~~'
+ ```
+
 Here are my solutions for the [Advent of Code 2022](https://adventofcode.com/2022) Challenge.
 
 ## Quick Start
