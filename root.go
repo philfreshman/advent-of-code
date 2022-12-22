@@ -3,7 +3,6 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/philfreshman/advent-of-code-2022/day05"
 	"io"
 	"sort"
 	"time"
@@ -12,6 +11,9 @@ import (
 	"github.com/philfreshman/advent-of-code-2022/day02"
 	"github.com/philfreshman/advent-of-code-2022/day03"
 	"github.com/philfreshman/advent-of-code-2022/day04"
+	"github.com/philfreshman/advent-of-code-2022/day05"
+	"github.com/philfreshman/advent-of-code-2022/day06"
+
 	"github.com/spf13/cobra"
 )
 
@@ -26,6 +28,7 @@ var (
 		{day03.PuzzleA{}, day03.PuzzleB{}},
 		{day04.PuzzleA{}, day04.PuzzleB{}},
 		{day05.PuzzleA{}, day05.PuzzleB{}},
+		{day06.PuzzleA{}, day06.PuzzleB{}},
 	}
 )
 

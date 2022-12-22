@@ -24,10 +24,12 @@ func (s *Stack) IsEmpty() bool {
 	return len(*s) == 0
 }
 
+// Push adds one item at the top of the stack
 func (s *Stack) Push(str string) {
 	*s = append(*s, str)
 }
 
+// Append add multiple items at the top of the stack
 func (s *Stack) Append(stack []string) {
 	for i := len(stack) - 1; i >= 0; i-- {
 		(*s).Push(stack[i])

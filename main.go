@@ -4,7 +4,7 @@ import (
 	"os"
 )
 
-// go run . aoc-2022 --benchmark --day 5
+// go run . aoc-2022 --benchmark --day 6
 
 func main() {
 	cmd, err := newRootCmd(os.Args[1:], os.Stdout)
