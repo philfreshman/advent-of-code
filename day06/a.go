@@ -1,9 +1,5 @@
 package day06
 
-import (
-	_ "embed"
-)
-
 type PuzzleA struct{}
 
 func (p PuzzleA) String() string {

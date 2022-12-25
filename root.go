@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	"github.com/philfreshman/advent-of-code-2022/day07"
 	"io"
 	"sort"
 	"time"
@@ -29,17 +30,23 @@ var (
 		{day04.PuzzleA{}, day04.PuzzleB{}},
 		{day05.PuzzleA{}, day05.PuzzleB{}},
 		{day06.PuzzleA{}, day06.PuzzleB{}},
+		{day07.PuzzleA{}},
 	}
 )
 
-type options struct {
+type Runner interface {
+	fmt.Stringer
+	Run() any
+}
+
+type Options struct {
 	Bench  bool
 	Puzzle int
 	Times  int
 }
 
 func newRootCmd(args []string, out io.Writer) (*cobra.Command, error) {
-	opts := options{}
+	opts := Options{}
 
 	cmd := &cobra.Command{
 		Use:          "aoc-2022",
@@ -106,7 +113,7 @@ func sumElapsedTime(dur []time.Duration) time.Duration {
 	return t
 }
 
-func benchmarkPuzzles(out io.Writer, pzs []Runner, opts options) {
+func benchmarkPuzzles(out io.Writer, pzs []Runner, opts Options) {
 	fmt.Fprintf(out, "🎄 Advent of Code 2022 - Benchmark [executions: %d]\n", opts.Times)
 	fmt.Fprintln(out)
 
