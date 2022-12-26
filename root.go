@@ -30,7 +30,7 @@ var (
 		{day04.PuzzleA{}, day04.PuzzleB{}},
 		{day05.PuzzleA{}, day05.PuzzleB{}},
 		{day06.PuzzleA{}, day06.PuzzleB{}},
-		{day07.PuzzleA{}},
+		{day07.PuzzleA{}, day07.PuzzleB{}},
 	}
 )
 

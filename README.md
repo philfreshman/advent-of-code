@@ -18,7 +18,7 @@ Here are my solutions for the [Advent of Code 2022](https://adventofcode.com/202
 To build and run Go solutions:
 
 ```sh
-go run . aoc-2022 --benchmark --day 5
+go run . aoc-2022 --benchmark --day 7
 ```
 
 
@@ -42,5 +42,5 @@ MacBook Pro (2019)
 | Day 4 | [`0.951ms`](./day04/a.go) | [`0.724ms`](./day04/b.go) |
 | Day 5 | [`0.071ms`](./day05/a.go) | [`0.145ms`](./day05/b.go) |
 | Day 6 | [`0.071ms`](./day06/a.go) | [`0.290ms`](./day06/b.go) |
-| Day 7 | [`0.118ms`](./day07/a.go) |
+| Day 7 | [`0.118ms`](./day07/a.go) | [`0.119ms`](./day07/b.go) |
 
