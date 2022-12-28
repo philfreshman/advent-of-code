@@ -1,7 +1,6 @@
 package day07
 
 import (
-	"sort"
 	"strings"
 )
 
@@ -19,25 +18,17 @@ func (p PuzzleB) Run() any {
 	fs.InitFileSystem(&inputSlice)
 	fs.ReadSizeRecursive2()
 
-	// TODO - clean up code
-	// sort result
-	x := dirMap
-	type kv struct {
-		Key   string
-		Value int
+	return GetLowestValue(dirMap)
+}
+
+func GetLowestValue(sl map[string]int) int {
+	lowest := 70000000
+	for _, val := range sl {
+		if val < lowest {
+			lowest = val
+		}
 	}
-
-	var ss []kv
-	for k, v := range x {
-		ss = append(ss, kv{k, v})
-	}
-
-	sort.Slice(ss, func(i, j int) bool {
-		return ss[i].Value > ss[j].Value
-	})
-
-	lastElement := ss[len(ss)-1]
-	return lastElement.Value
+	return lowest
 }
 
 func (fs *FileSystem) ReadSizeRecursive2() {

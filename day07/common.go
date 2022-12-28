@@ -9,6 +9,10 @@ import (
 //go:embed input.txt
 var input string
 
+var fs = FileSystem{}
+
+var dirSizes int
+
 type File struct {
 	name string
 	size int

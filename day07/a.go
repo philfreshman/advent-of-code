@@ -4,10 +4,6 @@ import (
 	"strings"
 )
 
-var fs = FileSystem{}
-
-var dirSizes int
-
 type PuzzleA struct{}
 
 func (p PuzzleA) String() string {
@@ -31,16 +27,16 @@ func (fs *FileSystem) ReadSizeRecursive() {
 		fs.currentDir = dir
 		fs.ReadSizeRecursive()
 	} else {
-		fs.currentDir.CountDirSize()
+		fs.currentDir.CountDirSizeA()
 		fs.currentDir = fs.currentDir.parentDir
 		fs.ReadSizeRecursive()
 	}
 }
 
-// CountDirSize counts the size of all files in the current directory,
+// CountDirSizeA counts the size of all files in the current directory,
 // assigns this value to the directory and if it's not more than 100000,
 // it adds that value to the global dir-size register.
-func (d *Directory) CountDirSize() {
+func (d *Directory) CountDirSizeA() {
 
 	dirSize := 0
 	for _, val := range (*d).files {
