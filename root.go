@@ -19,7 +19,7 @@ import (
 )
 
 const (
-	benchNum = 10000
+	benchNum = 1000
 )
 
 var (

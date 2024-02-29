@@ -17,9 +17,10 @@ func (p PuzzleA) Run() any {
 	arrOfSections := strings.Split(input, "\n")
 
 	for _, val := range arrOfSections {
+		splitVal := strings.Split(val, ",")
 		stringPair := StringPair{
-			strings.Split(val, ",")[0],
-			strings.Split(val, ",")[1],
+			splitVal[0],
+			splitVal[1],
 		}
 
 		slicePair := SlicePair{
